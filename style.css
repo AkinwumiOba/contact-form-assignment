@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+    :root {
+        --primary-LightGreen: hsl(148, 38%, 91%);
+        --primary-MediumGreen: hsl(169, 82%, 27%);
+        --primary-Red: hsl(0, 66%, 54%);
+        --neutral-White: white;
+        --neutral-MediumGrey:  hsl(186, 15%, 59%);
+        --neutral-DarkGrey: hsl(187, 24%, 22%);
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        align-items: center;
+        background-color: var(--primary-LightGreen);
+        box-sizing: border-box;
+        display: block;
+        font-size: 12px;
+        font-weight: 300;
+        font-family: "Karla", sans-serif;
+        }
+
+        form{
+            background-color: white;
+            padding: 20px;
+            margin: 15px;
+            width: 95%;
+            margin-inline: auto;
+            border-radius: 10px;
+        }
+
+        h1{
+            margin-bottom: 20px;
+        }
+
+        fieldset{
+            margin-block: 10px;
+            border: none;
+        }
+
+        .box{
+            margin-block: 7px;
+            border-radius: 10px;
+            box-shadow: none;
+            width: 100%;
+            height: 45px;
+            cursor: pointer;
+            border: var(--neutral-MediumGrey) solid 1px;
+        }
+
+        .general{
+            margin-bottom: 15px;
+        }
+
+        .box:hover, .radio:hover, .checkbox:hover{
+            cursor: pointer;
+            border: var(--primary-MediumGreen) solid 1px
+        }
+
+        .querytext{
+           margin-bottom: 10px;
+           cursor: pointer;
+        }
+
+        span{
+            color: var(--primary-MediumGreen);
+        }
+
+        .consent{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .InputMessage{
+            height: 180px;
+        }
+        
+        .radio{
+            border: var(--neutral-MediumGrey) solid 1px;
+            border-radius: 10px;
+            width: 100%;
+            height: 45px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            padding-inline: 20px;
+            font-size: 14px;
+            gap: 20px;
+        }
+
+        h{
+            visibility: hidden;
+        }
+
+        #general, #support{
+            margin-right: 10px;
+        }
+
+        button{
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+            margin: auto;
+            margin-inline: auto;
+            height: 45px;
+            color: white;
+            cursor: pointer;
+            background-color: var(--primary-MediumGreen);
+        }
+
+        button:hover{
+            background-color: rgb(7, 41, 28);
+        }
+
+        @media (width >= 425px) {
+            form{
+                width: 90%;
+            }
+
+        }
+
+        @media (width >= 640px) {
+            form{
+                max-width: 85%;
+            }
+
+            .names, .querybox{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+            }
+
+            .InputMessage{
+                height: 90px;
+            }
+
+            .general{
+                margin-bottom: 0;
+            }
+        }
+
+        @media (width >= 768px) {
+            form{
+                max-width: 720px;
+            }
+        }

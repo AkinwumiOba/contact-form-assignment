@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+    </style>
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <form>
+
+    <h1>
+      <p>Contact Us</p>
+    </h1>
+
+    <fieldset class="names">
+      <div>
+        <label for="first">First Name <span>*</span></label>
+        <input type="text" id="first" class="Input box" >
+        <h>This field is required</h>
+      </div>
+
+      <div>
+        <label for="last">Last Name <span>*</span></label>
+        <input id="last" type="text" class="Input box" >
+        <h>This field is required</h>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <label for="email">Email Address <span>*</span></label>
+      <input id="email" type="text" class="InputEmail box" >
+      <h>Please enter a valid email address</h>
+      <h>This field is required</h>
+    </fieldset>
+
+    <fieldset class="query">
+      <p class="querytext">Query Type <span>*</span></p>
+      <div class="querybox">
+        <div class="radio general"><label for="general"><input type="radio" id="general">General Enquiry</label></div>
+        <div class="radio"><label  for="support"><input type="radio" id="support">Support Request</label></div>
+      </div>
+      <h>Please select a query type</h>
+    </fieldset>
+
+    <fieldset>
+      <label for="message">Message <span>*</span></label>
+      <input id="message" type="text" class="InputMessage box" >
+      <h>This field is required</h>
+    </fieldset>
+
+    <fieldset>
+      <div class="consent">
+        <input type="checkbox" class="Check">
+        <p>I consent to being contacted by the team <span>*</span></p>
+      </div>
+      <h>To submit this form, please consent to being contacted</h>
+    </fieldset>
+
+    <button>
+      Submit
+    </button>
+
+    <h>Message Sent!</h>
+    <h> Thanks for completing the form. We'll be in touch soon!</h>
+  
+  </form>
+</body>
+</html>
