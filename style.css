@@ -81,6 +81,11 @@
 
         .InputMessage{
             height: 180px;
+            width: 100%;
+            vertical-align: top;
+            box-sizing: border-box; 
+            padding: 10px;
+            resize: none;
         }
         
         .radio{
@@ -94,6 +99,10 @@
             padding-inline: 20px;
             font-size: 14px;
             gap: 20px;
+        }
+
+        input[type="radio"]:checked, input[type="checkbox"]:checked{
+            accent-color: var(--primary-MediumGreen);
         }
 
         h{
