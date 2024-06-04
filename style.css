@@ -52,6 +52,7 @@
             width: 100%;
             height: 45px;
             cursor: pointer;
+            padding-inline: 10px;
             border: var(--neutral-MediumGrey) solid 1px;
         }
 
